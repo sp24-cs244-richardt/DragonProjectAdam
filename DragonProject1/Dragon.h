@@ -11,7 +11,7 @@
 // <Dragon.h>
 //
 // <Creates all of the protected variables, the constructors, and makes all of the needed public abstract methods for other methods to override.
-// This class is abstract and serves as a base class for all types of dragons. >
+// This class is abstract and serves as a base class for all types of dragons.>
 //
 // Instructor: Jocelyn Richardt
 // Assignment: <OO Design & C++ Review (Dragon Classes)>
