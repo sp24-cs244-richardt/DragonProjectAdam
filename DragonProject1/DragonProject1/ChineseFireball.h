@@ -15,7 +15,7 @@
 // Instructor: Jocelyn Richardt
 // Assignment: <OO Design & C++ Review (Dragon Classes)>
 // Student: <Adam McGlin>
-// Date: <3/18/2024>
+// Date: <2/17/2024>
 //
 // ---------------------------------------------------------------------------
 
@@ -28,10 +28,5 @@ class ChineseFireball : public Dragon // ChineseFireball is a subclass of Dragon
 	public:
 		void train() override; // overriding Dragon.h
 		void print() override; // overriding Dragon.h
-		int getHealth() override; // overriding Dragon.h
-		void setHealth(int newHealth) override; // overriding Dragon.h
-		int getCharisma() override; // overriding Dragon.h
-		void setCharisma(int newCharisma) override; // overriding Dragon.h
-		int getFirepower() override; // overriding Dragon.h
-		ChineseFireball() : Dragon("Scarlet", "China", (rand() % 50) + 50, (rand() % 35) + 50, (rand() % 30) + 25) {}; // declaration of constructor
+		ChineseFireball() : Dragon("Scarlet", "China", (rand() % 50) + 50) {}; // declaration of constructor
 };

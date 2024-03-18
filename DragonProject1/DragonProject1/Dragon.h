@@ -16,7 +16,7 @@
 // Instructor: Jocelyn Richardt
 // Assignment: <OO Design & C++ Review (Dragon Classes)>
 // Student: <Adam McGlin>
-// Date: <3/18/2024>
+// Date: <2/17/2024>
 //
 // ---------------------------------------------------------------------------
 
@@ -34,22 +34,13 @@ protected:
 	string skinColor_;
 	string nativeRange_;
 	int firePower_;
-	int health_;
-	int charisma_;
 public:
 	virtual void train() = 0; // abstract method
 	virtual void print() = 0; // abstract method
-	virtual int getHealth() = 0; // abstract method used for getting a data value
-	virtual void setHealth(int newHealth) = 0; // abstract method used for setting a data value
-	virtual int getCharisma() = 0; // abstract method used for getting a data value
-	virtual void setCharisma(int newCharisma) = 0; // abstract method used for setting a data value
-	virtual int getFirepower() = 0; // abstract method used for getting a data value
-	Dragon(string skinColor, string nativeRange, int firePower, int health, int charisma) {
+	Dragon(string skinColor, string nativeRange, int firePower){
 		this->firePower_ = firePower;
 		this->skinColor_ = skinColor;
 		this->nativeRange_ = nativeRange;
-		this->health_ = health;
-		this->charisma_ = charisma;
 	}
 };
 

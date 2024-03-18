@@ -15,14 +15,14 @@
 // Instructor: Jocelyn Richardt
 // Assignment: <OO Design & C++ Review (Dragon Classes)>
 // Student: <Adam McGlin>
-// Date: <3/18/2024>
+// Date: <2/17/2024>
 //
 // ---------------------------------------------------------------------------
 
 // set up
 #include "CommonWelsh.h"
 
-CommonWelsh::CommonWelsh() : Dragon("Green", "Wales", (rand() % 50) + 10, (rand() % 5) + 95, (rand() % 10) + 45) {} // declaration of constructor (was trying a new way to do this)
+CommonWelsh::CommonWelsh() : Dragon("Green", "Wales", (rand() % 50) + 10) {} // declaration of constructor (was trying a new way to do this)
 
 void CommonWelsh::train() { // defining the overriden train() method
 
@@ -36,30 +36,9 @@ void CommonWelsh::train() { // defining the overriden train() method
 	if (trustFactor_ > 50) { // Trust Factor is limited to 50
 		trustFactor_ = 5; // resets to 5 when 50 is surpassed
 	}
-
-	
 }
 
 
 void CommonWelsh::print() { // prints out the variables in an easy to read way // defining the overriden print() method
-	cout << "Common Welsh       --Current Fire Power = " << this->firePower_ << "--   --Current Charisma = " << this->charisma_ << "--   --Current Health = " << this->health_ << "--   --Trust "<< this-> trustFactor_ << "-- " << endl;
-}
-
-// getters and setters required for the game
-int CommonWelsh::getHealth() {
-	return health_;
-}
-
-void CommonWelsh::setHealth(int newHealth) {
-	health_ = newHealth;
-}
-
-int CommonWelsh::getCharisma() {
-	return charisma_;
-}
-void CommonWelsh::setCharisma(int newCharisma) {
-	charisma_ = newCharisma;
-}
-int CommonWelsh::getFirepower() {
-	return firePower_;
+	cout << "  Skin Color: " << this->skinColor_ << "--   --Native Range: " << this->nativeRange_ << "--   --Current Fire Power = " << this->firePower_ << "--   --Trust "<< this-> trustFactor_ << "-- " << endl;
 }

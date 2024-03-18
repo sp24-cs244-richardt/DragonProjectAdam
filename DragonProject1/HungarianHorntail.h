@@ -15,7 +15,7 @@
 // Instructor: Jocelyn Richardt
 // Assignment: <OO Design & C++ Review (Dragon Classes)>
 // Student: <Adam McGlin>
-// Date: <2/17/2024>
+// Date: <3/18/2024>
 //
 // ---------------------------------------------------------------------------
 
@@ -28,5 +28,10 @@ class HungarianHorntail : public Dragon // HungarianHorntail is a subclass of Dr
 	public:
 		void train() override; // overriding Dragon.h
 		void print() override; // overriding Dragon.h
-		HungarianHorntail() : Dragon("Black", "Hungary", (firePower_ = (rand() % 75) + 10)) {}; // declaration of constructor
+		int getHealth() override; // overriding Dragon.h
+		void setHealth(int newHealth) override; // overriding Dragon.h
+		int getCharisma() override; // overriding Dragon.h
+		void setCharisma(int newCharisma) override; // overriding Dragon.h
+		int getFirepower() override; // overriding Dragon.h
+		HungarianHorntail() : Dragon("Black", "Hungary", (firePower_ = (rand() % 75) + 10), (rand() % 30) + 60, (rand() % 20) + 75) {}; // declaration of constructor
 };
